@@ -1,0 +1,10 @@
+html {
+    font-family: Arial, serif;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    color: coral;
+    font-size: 20px;
+}
