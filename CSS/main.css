@@ -1,5 +1,12 @@
 html {
+    background-color: #424242;
+    color: #FFFFFF;
     font-family: Arial, serif;
+}
+
+nav {
+    display: flex;
+    justify-self: flex-start;
 }
 
 .logo {
