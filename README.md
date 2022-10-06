@@ -1,4 +1,4 @@
-Moviecatalog
+Moviecatalog (M33011 Sergeev Egor Dmitrievich)
 ============
 ![Lines of code](https://img.shields.io/tokei/lines/GitHub/GTEgorss/GTEgorss_Web)
 ![GitHub last commit](https://img.shields.io/github/last-commit/GTEgorss/GTEgorss_Web)
