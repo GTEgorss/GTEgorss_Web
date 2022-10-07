@@ -12,25 +12,25 @@
 
 <header>
 
-    <div class="title-and-corner">
-        <div class="title">
-            <img class="icon" src="Content/favicon.ico" alt="Logo" width="96px" height="96px">
+    <div class="title">
+        <div class="title_name">
+            <img class="title_icon" src="Content/favicon.ico" alt="Logo" width="96px" height="96px">
             <h1>Moviecatalog</h1>
         </div>
 
-        <nav class="corner-buttons">
-            <a class="corner-button" href="#">eng/rus</a>
-            <a class="corner-button" href="#">sign up</a>
-            <a class="corner-button" href="#">log in</a>
+        <nav class="title_buttons">
+            <a class="title_button" href="#">eng/rus</a>
+            <a class="title_button" href="#">sign up</a>
+            <a class="title_button" href="#">log in</a>
         </nav>
 
     </div>
 
     <nav>
-        <a class="nav-button" href="#">Home </a>
-        <a class="nav-button" href="#">Lists</a>
-        <a class="nav-button" href="#">Favorites</a>
-        <a class="nav-button" href="#">Explore</a>
+        <a class="nav_button" href="#">Home </a>
+        <a class="nav_button" href="#">Lists</a>
+        <a class="nav_button" href="#">Favorites</a>
+        <a class="nav_button" href="#">Explore</a>
     </nav>
 
 </header>
@@ -40,19 +40,110 @@
         Home
     </h1>
 
-    <article>
-        <h2>Trending films this month</h2>
-        <article>
-            <h3>Fall (2022)</h3>
-            Best friends Becky and Hunter find themselves at the top of a 2,000-foot radio
-            tower.
-            <pre><code>
+    <div class="columns">
+
+        <article class="columns_info-block">
+            <h2>Trending films this month</h2>
+
+            <section class="columns_info-block_movie-card">
+                <h3>Fall (2022)</h3>
+                <p>
+                    107 min | Thriller
+                </p>
+                <hr>
+                <p>
+                    Best friends Becky and Hunter find themselves at the top of a 2,000-foot radio
+                    tower.
+                </p>
+                <p>
+                    Director: Taika Waititi
+                </p>
+                <p>
+                    Stars: Chris Hemsworth, Natalie Portman, Christian Bale, Tessa Thompson
+                </p>
+                <pre><code>
     public static void Main(string[] args) {
-        Console.Writeln("Hello, world!");
+        Person Hunter = new Person();
+        Hunter.fallDown(); //unlucky
     }
-                    </code></pre>
+                </code></pre>
+            </section>
+
+            <section class="columns_info-block_movie-card">
+                <h3>Thor: Love and Thunder (2022)</h3>
+                <p>
+                    118 min | Action, Adventure, Comedy
+                </p>
+                <hr>
+                <p>
+                    Thor enlists the help of Valkyrie, Korg and ex-girlfriend Jane Foster to fight Gorr
+                    the God Butcher, who intends to make the gods extinct.
+                </p>
+                <p>
+                    Director: Scott Mann
+                </p>
+                <p>
+                    Stars: Grace Caroline Currey, Virginia Gardner
+                </p>
+                <pre>
+⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛⬛⬛⬛⬛⬛⬛⬜⬜⬜⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛🟨🟨🟨🟨🟨🟨🟨⬛⬜⬜⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬜⬜⬜⬜⬛🟨🟨🟨🟨🟨🟨🟨🟨🟨⬛⬜⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬜⬜⬜⬛🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨🟨⬛⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬜⬜⬜⬛🟨🟨🟨🟨🏻🏻🏻🏻🏻🟨🟨⬛⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬜⬜⬛🟨🟨🟨🟨🏻🏻⬜⬜🏻⬜🏻🟨⬛⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬜⬜⬛🟨🟨🟨🟨🏻⬜⬛⬛🏻⬛⬜🟨⬛⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬜⬜⬛🟨🟨🏻🟨🏻⬜⬛⬛🏻⬛⬜🟨⬛⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬜⬛🟨🟨🟨🏻🏻🏻🏻⬜⬜🏻⬜🏻🟨⬛⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬜⬛🟨🟨🟨⬛🏻🏻⬛⬛⬛🏻🏻⬛🟨⬛⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬜⬛🟨🟨🟨🟦⬛🏻🏻🏻🏻🏻⬛🟨🟦⬛⬜⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬜⬛🟦🟦🟨⬛⬛🟦⬛⬛⬛⬛⬛⬛🟦🟦🟦⬛⬜⬜⬜⬜⬜
+⬜⬜⬜⬜⬛🟥🟦🟦🟦⬛⬛⬛🟦⬛🟦⬛⬛⬛🟦🟦🟦🟥⬛⬜⬜⬜⬜
+⬜⬜⬜⬜⬛🟦🟥🟦⬛⬛⬛⬛⬛🟦⬛⬛⬛⬛⬛🟦🟥🟦⬛⬜⬜⬜⬜
+⬜⬜⬜⬜⬛🟦🟦⬛⬛⬛⬛🟦⬛🟦⬛🟦⬛⬛⬛⬛🟦🟦⬛⬜⬜⬜⬜
+⬜⬜⬜⬜⬛🟥🟥🏻⬛⬛⬛⬛⬛🟦⬛⬛⬛⬛⬛🏻🟥🟥⬛⬜⬜⬜⬜
+⬜⬜⬜⬜⬛🏻🏻🏻⬛⬛⬛🟦⬛🟦⬛🟦⬛⬛⬛🏻🏻🏻⬛⬜⬜⬜⬜
+⬜⬜⬜⬛🟥⬛⬛⬛🟥⬛🟦🟦🟦🟦🟦🟦🟦⬛🟥⬛⬛⬛🟥⬛⬜⬜⬜
+⬜⬜⬜⬛🟥🟥🟥🟥⬛⬛⬛🟦⬛⬛⬛🟦⬛⬛⬛🟥🟥🟥🟥⬛⬜⬜⬜
+⬜⬜⬛🟥🟥🟥🟥⬛🟦⬛⬛⬛⬛⬛⬛⬛⬛⬛🟦⬛🟥🟥🟥🟥⬛⬜⬜
+⬜⬜⬛🟥🟥🟥⬛⬛⬛🟦⬛⬛⬛🟥⬛⬛⬛🟦⬛⬛⬛🟥🟥🟥⬛⬜⬜
+⬜⬛🟥🟥⬛⬛⬛⬛🟦🟦🟦⬛🟥🟥🟥⬛🟦🟦🟦⬛⬛⬛⬛🟥🟥⬛⬜
+⬛🟥🟥⬛🟦🟦🟦🟦🟦🟦🟦⬛🟥🟥🟥⬛🟦🟦🟦🟦🟦🟦🟦⬛🟥🟥⬛
+⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛⬛
+                </pre>
+            </section>
+
+            <section class="columns_info-block_movie-card">
+                <h3>Nope (2022)</h3>
+                <p>
+                    130 min | Horror, Mystery Thriller
+                </p>
+                <hr>
+                <p>
+                    The residents of a lonely gulch in inland California bear witness to an uncanny and
+                    chilling discovery.
+                </p>
+                <p>
+                    Director: Jordan Peele
+                </p>
+                <p>
+                    Stars: Daniel Kaluuya, Keke Palmer, Brandon Perea, Michael Wincott
+                </p>
+                <blockquote>
+                    <p>'This dream you're chasing, the one where you end up at the top of the mountain,
+                        all eyes on you, it's the dream you never wake up from.'</p>
+                    <cite>Antlers Holst (Nope)</cite>
+                </blockquote>
+            </section>
+
         </article>
-    </article>
+
+        <div class="columns_info-block">
+            <h2>Top 5 films from Watch later list</h2>
+
+        </div>
+
+    </div>
 
     <article>
         <h2>Top 5 films to watch from your Watch later list</h2>
