@@ -1,0 +1,12 @@
+@import "header.css";
+@import "main.css";
+@import "title.css";
+@import "nav.css";
+@import "columns.css";
+@import "footer.css";
+
+html {
+    background: #424242;
+    color: #FFFFFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
