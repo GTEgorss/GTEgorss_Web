@@ -22,7 +22,7 @@
 }
 
 .current {
-    border: 3px solid coral;
+    border: 3px solid rgba(207, 79, 32, 0.75);
 }
 
 nav a:hover {

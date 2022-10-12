@@ -1,9 +1,13 @@
 footer {
-    margin: 40px 20px;
+    //margin: 40px 20px;
     text-align: center;
 }
 
 footer a {
     color: white;
     margin: 5px;
+}
+
+footer hr {
+    margin: 30px 20px 30px;
 }

@@ -1,0 +1,24 @@
+.movie-table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    width: 100%
+}
+
+.movie-table td, th {
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+    text-align: left;
+    padding: 8px;
+}
+
+.movie-table tr:nth-child(odd) {
+    background: #bbbbbb;
+}
+
+.movie-table tr:nth-child(1) {
+    background: rgba(207, 79, 32, 0.75);
+}
+
+.movie-table__movie-type {
+    float: right;
+}
