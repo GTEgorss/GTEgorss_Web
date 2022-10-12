@@ -9,4 +9,6 @@ html {
     background: #424242;
     color: #FFFFFF;
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto 0;
+    max-width: 1600px;
 }

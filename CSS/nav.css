@@ -1,6 +1,5 @@
 .top-nav {
     position: relative;
-    //position: fixed;
     top: 0;
     width: 100%;
 
@@ -18,7 +17,12 @@
     background: #D9D9D9;
     padding: 10px 30px 10px;
     margin: 10px;
+
     border-radius: 15px;
+}
+
+.current {
+    border: 3px solid coral;
 }
 
 nav a:hover {
