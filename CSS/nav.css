@@ -1,4 +1,7 @@
 .top-nav {
+    display: flex;
+    flex-flow: wrap;
+
     position: relative;
     top: 0;
     width: 100%;
