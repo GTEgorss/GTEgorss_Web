@@ -6,7 +6,7 @@
     top: 0;
     width: 100%;
 
-    padding: 0 0 20px;
+    padding: 10px 0 0;
     background: #424242;
 }
 
@@ -19,13 +19,14 @@
 
     background: #D9D9D9;
     padding: 10px 30px 10px;
-    margin: 10px;
+    margin: 0 10px 20px;
 
     border-radius: 15px;
 }
 
 .current {
     border: 3px solid rgba(207, 79, 32, 0.75);
+    padding: 7px 30px 7px;
 }
 
 nav a:hover {
