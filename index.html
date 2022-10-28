@@ -4,14 +4,11 @@
     <script src="JS/LoadTime.js"></script>
 
     <link rel="shortcut icon" href="Content/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="CSS/master.css">
-    <link rel="stylesheet" href="CSS/header.css">
-    <link rel="stylesheet" href="CSS/main.css">
-    <link rel="stylesheet" href="CSS/title.css">
-    <link rel="stylesheet" href="CSS/nav.css">
-    <link rel="stylesheet" href="CSS/footer.css">
-    <link rel="stylesheet" href="CSS/movietable.css">
-    <link rel="stylesheet" href="CSS/columns.css">
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/modules.css">
+    <link rel="stylesheet" href="CSS/state.css">
+    <link rel="stylesheet" href="CSS/theme.css">
     <meta charset="UTF-8">
     <meta name="keywords" content="Movie, Catalog, Catalogue, Moviecatalog, Moviecatalogue, film, list">
     <meta name="description" content="Best place to find or share films you like, create playlists and ratings">
@@ -23,44 +20,41 @@
 
 <header>
 
-    <div class="title">
-        <div class="title__name">
+    <div class="layout-title">
+        <div class="layout-title--name">
             <a href="./">
-                <img class="title__icon" src="Content/favicon.ico" alt="Logo" width="96px" height="96px">
+                <img class="icon" src="Content/favicon.ico" alt="Logo" width="96px" height="96px">
             </a>
-            <h1>Moviecatalog</h1>
+            <h1 class="title--h1">Moviecatalog</h1>
         </div>
 
-        <nav class="title__buttons">
-            <a class="title__button" href="#">eng/rus</a>
-            <a class="title__button" href="#">sign up</a>
-            <a class="title__button" href="#">log in</a>
+        <nav class="layout-title--buttons">
+            <a class="button button--title" href="#">eng/rus</a>
+            <a class="button button--title" href="#">sign up</a>
+            <a class="button button--title" href="#">log in</a>
         </nav>
-
     </div>
 
-    <nav class="top-nav">
-        <a class="nav__button current" href="./">Home </a>
-        <a class="nav__button" href="HTML/Lists.html">Lists</a>
-        <a class="nav__button" href="HTML/Favorites.html">Favorites</a>
-        <a class="nav__button" href="HTML/Explore.html">Explore</a>
+    <nav class="layout-nav">
+        <a class="button button--nav is-button-selected" href="./">Home</a>
+        <a class="button button--nav" href="HTML/Lists.html">Lists</a>
+        <a class="button button--nav" href="HTML/Favorites.html">Favorites</a>
+        <a class="button button--nav" href="HTML/Explore.html">Explore</a>
     </nav>
 
 </header>
 
 <main>
-    <h1>
-        Home
-    </h1>
+    <h1 class="main--h1">Home</h1>
 
-    <hr>
+    <hr class="main--hr">
 
-    <div class="columns">
-        <section class="columns__section">
-            <article class="columns__info-block">
-                <h2>Trending films this month</h2>
+    <div class="layout-columns">
+        <section class="layout-columns--section">
+            <section class="columns--info-block">
+                <h2 class="columns--h2">Trending films this month</h2>
 
-                <section class="columns__movie-card">
+                <article class="columns--movie-card">
                     <h3>Fall (2022)</h3>
                     <p>107 min | Thriller</p>
                     <hr>
@@ -74,9 +68,9 @@
         Hunter.fallDown(); //unlucky
     }
                 </code></pre>
-                </section>
+                </article>
 
-                <section class="columns__movie-card">
+                <article class="columns--movie-card">
                     <h3>Thor: Love and Thunder (2022)</h3>
                     <p>118 min | Action, Adventure, Comedy</p>
                     <hr>
@@ -85,7 +79,7 @@
                         who intends to make the gods extinct.</p>
                     <p>Director: Scott Mann</p>
                     <p>Stars: Grace Caroline Currey, Virginia Gardner</p>
-                    <pre id="Pepe">
+                    <pre class="ASCII-pic">
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣶⣶⣿⣿⣷⣶⣦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣶⠿⠟⠋⠉⠁⠀⠀⠀⠀⠉⠙⠻⣷⣦⣄⢀⣀⣤⣶⡾⠿⠿⠟⠛⠛⠻⠿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⡿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⡛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -114,9 +108,9 @@
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠻⠿⢷⣶⣶⣶⣶⣶⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣴⣶⣶⡿⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠛⠛⠛⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                 </pre>
-                </section>
+                </article>
 
-                <section class="columns__movie-card">
+                <article class="columns--movie-card">
                     <h3>Nope (2022)</h3>
                     <p>130 min | Horror, Mystery Thriller</p>
                     <hr>
@@ -129,13 +123,13 @@
                             all eyes on you, it's the dream you <i>never</i> wake up from.'</p>
                         <cite>Antlers Holst (Nope)</cite>
                     </blockquote>
-                </section>
+                </article>
 
-            </article>
+            </section>
         </section>
-        <section class="columns__section">
-            <article class="columns__info-block">
-                <h2>Top 5 films from Watch later list</h2>
+        <section class="layout-columns--section">
+            <article class="columns--info-block">
+                <h2 class="columns--h2">Top 5 films from Watch later list</h2>
                 <table class="movie-table">
                     <tr>
                         <th>Name</th>
@@ -169,8 +163,8 @@
                     </tr>
                 </table>
             </article>
-            <article class="columns__info-block">
-                <h2>Public lists</h2>
+            <article class="columns--info-block">
+                <h2 class="columns--h2">Public lists</h2>
                 <table class="movie-table">
                     <tr>
                         <th>Name</th>
@@ -211,13 +205,15 @@
             </article>
         </section>
     </div>
+
 </main>
 
 <footer>
-    <hr>
+
+    <hr class="footer--hr">
     <p>Author: Sergeev 'GTEgorss' Egor</p>
-    <a href="mailto:noartu@mail.ru" target="_blank">noartu@mail.ru</a>
-    <a href="https:/t.me/GTEgorss" target="_blank">@GTEgorss</a>
+    <a class="footer--a" href="mailto:noartu@mail.ru" target="_blank">noartu@mail.ru</a>
+    <a class="footer--a" href="https:/t.me/GTEgorss" target="_blank">@GTEgorss</a>
     <p>Copyright by ©Не катайте, пожалуйста!</p>
     <p>Load time: <span id="load-time"></span> s</p>
 

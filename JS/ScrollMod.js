@@ -16,7 +16,7 @@ function modifyTitle(scrollPos, width) {
     console.log(scrollPos + " " + maxScrollPos + " " + width + "\n");
 
     if (scrollPos > maxScrollPos && !fixed) {
-        const topNav = document.querySelector('.top-nav');
+        const topNav = document.querySelector('.layout-nav');
         const main = document.querySelector('main');
 
         topNav.style.position = "fixed";
@@ -26,7 +26,7 @@ function modifyTitle(scrollPos, width) {
         fixed = true;
 
     } else if (scrollPos <= maxScrollPos && fixed) {
-        const topNav = document.querySelector('.top-nav');
+        const topNav = document.querySelector('.layout-nav');
         const main = document.querySelector('main');
 
         topNav.style.position = "relative";

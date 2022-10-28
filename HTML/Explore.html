@@ -4,14 +4,11 @@
     <script src="../JS/LoadTime.js"></script>
 
     <link rel="shortcut icon" href="../Content/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/master.css">
-    <link rel="stylesheet" href="../CSS/header.css">
-    <link rel="stylesheet" href="../CSS/main.css">
-    <link rel="stylesheet" href="../CSS/title.css">
-    <link rel="stylesheet" href="../CSS/nav.css">
-    <link rel="stylesheet" href="../CSS/columns.css">
-    <link rel="stylesheet" href="../CSS/footer.css">
-    <link rel="stylesheet" href="../CSS/explore.css">
+    <link rel="stylesheet" href="../CSS/base.css">
+    <link rel="stylesheet" href="../CSS/layout.css">
+    <link rel="stylesheet" href="../CSS/modules.css">
+    <link rel="stylesheet" href="../CSS/state.css">
+    <link rel="stylesheet" href="../CSS/theme.css">
     <meta charset="UTF-8">
     <meta name="keywords" content="Movie, Catalog, Catalogue, Moviecatalog, Moviecatalogue, film, list">
     <meta name="description" content="Best place to find or share films you like, create playlists and ratings">
@@ -24,43 +21,38 @@
 
 <header>
 
-    <div class="title">
-        <div class="title__name">
+    <div class="layout-title">
+        <div class="layout-title--name">
             <a href="../">
-                <img class="title__icon" src="../Content/favicon.ico" alt="Logo" width="96px" height="96px">
+                <img class="icon" src="../Content/favicon.ico" alt="Logo" width="96px" height="96px">
             </a>
-            <h1>Moviecatalog</h1>
+            <h1 class="title--h1">Moviecatalog</h1>
         </div>
 
-        <nav class="title__buttons">
-            <a class="title__button" href="#">eng/rus</a>
-            <a class="title__button" href="#">sign up</a>
-            <a class="title__button" href="#">log in</a>
+        <nav class="layout-title--buttons">
+            <a class="button button--title" href="#">eng/rus</a>
+            <a class="button button--title" href="#">sign up</a>
+            <a class="button button--title" href="#">log in</a>
         </nav>
-
     </div>
 
-    <nav class="top-nav">
-        <a class="nav__button" href="../">Home </a>
-        <a class="nav__button" href="../HTML/Lists.html">Lists</a>
-        <a class="nav__button" href="../HTML/Favorites.html">Favorites</a>
-        <a class="nav__button current" href="../HTML/Explore.html">Explore</a>
+    <nav class="layout-nav">
+        <a class="button button--nav" href="../">Home</a>
+        <a class="button button--nav" href="../HTML/Lists.html">Lists</a>
+        <a class="button button--nav" href="../HTML/Favorites.html">Favorites</a>
+        <a class="button button--nav is-button-selected" href="../HTML/Explore.html">Explore</a>
     </nav>
 
 </header>
 
 <main>
 
-    <h1>
-        Explore
-    </h1>
+    <h1 class="main--h1">Explore</h1>
 
-    <hr>
+    <hr class="main--hr">
 
-    <div class="explore__text">
-        <h2>
-            да не умер он в конце драйва
-        </h2>
+    <div class="text">
+        <h2 class="main--h2">да не умер он в конце драйва</h2>
 
         <p>да не умер он в конце драйва</p>
         <p>да не умер он в конце драйва</p>
@@ -93,16 +85,16 @@
         <p>да не умер он в конце драйва</p>
         <p>да не умер он в конце драйва</p>
         <p>да не умер он в конце драйва</p>
-
     </div>
 
 </main>
 
 <footer>
-    <hr>
+
+    <hr class="footer--hr">
     <p>Author: Sergeev 'GTEgorss' Egor</p>
-    <a href="mailto:noartu@mail.ru" target="_blank">noartu@mail.ru</a>
-    <a href="https:/t.me/GTEgorss" target="_blank">@GTEgorss</a>
+    <a class="footer--a" href="mailto:noartu@mail.ru" target="_blank">noartu@mail.ru</a>
+    <a class="footer--a" href="https:/t.me/GTEgorss" target="_blank">@GTEgorss</a>
     <p>Copyright by ©Не катайте, пожалуйста!</p>
     <p>Load time: <span id="load-time"></span> s</p>
 

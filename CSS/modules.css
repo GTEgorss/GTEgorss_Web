@@ -1,0 +1,103 @@
+.main--h1 {
+    margin: 0 20px 10px;
+}
+
+.main--hr {
+    margin: 10px 20px 30px;
+}
+
+.main--h2 {
+    margin: 0;
+}
+
+.title--h1 {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    color: coral;
+    font-size: 44px;
+    text-shadow: 2px 4px 4px #9d0000;
+}
+
+.button {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    box-shadow: 2px 4px 4px black;
+
+    background: #D9D9D9;
+    padding: 10px 30px 10px;
+}
+
+.columns--h2 {
+    margin: 10px 0 10px;
+}
+
+.columns--info-block {
+    color: black;
+    overflow: hidden;
+
+    padding: 0 20px 0;
+    background-color: #D9D9D9;
+    border-radius: 15px;
+}
+
+.columns--movie-card {
+    color: white;
+    overflow: hidden;
+    background-color: #424242;
+
+    padding: 0 20px 0;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.ASCII-pic {
+    display: inherit;
+}
+
+.movie-table {
+    border-collapse: collapse;
+    margin-bottom: 10px;
+    width: 100%
+}
+
+.movie-table td, th {
+    border: solid 2px black;
+    text-align: left;
+    padding: 8px;
+}
+
+.movie-table tr:nth-child(odd) {
+    background: #bbbbbb;
+}
+
+.movie-table tr:nth-child(1) {
+    background: rgba(207, 79, 32, 0.75);
+}
+
+.movie-table--movie-type {
+    float: right;
+}
+
+.text {
+    margin: 20px;
+}
+
+.footer--a {
+    color: white;
+    margin: 5px;
+}
+
+.footer--hr {
+    margin: 30px 20px 30px;
+}
+
+@media only screen and (max-width: 680px) {
+    .ASCII-pic {
+        display: none;
+    }
+}
