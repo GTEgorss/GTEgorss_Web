@@ -1,0 +1,4 @@
+.is-button-selected {
+    border: 3px solid rgba(207, 79, 32, 0.75);
+    padding: 7px 30px 7px;
+}

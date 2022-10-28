@@ -1,8 +1,223 @@
-<html>
-  <head>
-  <title>My project</title>
-  </head>
-  <body>
-    <h1>My project is going to be here</h1>
-  </body>
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <script src="JS/LoadTime.js"></script>
+
+    <link rel="shortcut icon" href="Content/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/base.css">
+    <link rel="stylesheet" href="CSS/layout.css">
+    <link rel="stylesheet" href="CSS/modules.css">
+    <link rel="stylesheet" href="CSS/state.css">
+    <link rel="stylesheet" href="CSS/theme.css">
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Movie, Catalog, Catalogue, Moviecatalog, Moviecatalogue, film, list">
+    <meta name="description" content="Best place to find or share films you like, create playlists and ratings">
+    <title>Moviecatalog</title>
+
+    <script src="JS/ScrollMod.js"></script>
+</head>
+<body>
+
+<header>
+
+    <div class="layout-title">
+        <div class="layout-title--name">
+            <a href="./">
+                <img class="icon" src="Content/favicon.ico" alt="Logo" width="96px" height="96px">
+            </a>
+            <h1 class="title--h1">Moviecatalog</h1>
+        </div>
+
+        <nav class="layout-title--buttons">
+            <a class="button button--title" href="#">eng/rus</a>
+            <a class="button button--title" href="#">sign up</a>
+            <a class="button button--title" href="#">log in</a>
+        </nav>
+    </div>
+
+    <nav class="layout-nav">
+        <a class="button button--nav is-button-selected" href="./">Home</a>
+        <a class="button button--nav" href="HTML/Lists.html">Lists</a>
+        <a class="button button--nav" href="HTML/Favorites.html">Favorites</a>
+        <a class="button button--nav" href="HTML/Explore.html">Explore</a>
+    </nav>
+
+</header>
+
+<main>
+    <h1 class="main--h1">Home</h1>
+
+    <hr class="main--hr">
+
+    <div class="layout-columns">
+        <section class="layout-columns--section">
+            <section class="columns--info-block">
+                <h2 class="columns--h2">Trending films this month</h2>
+
+                <article class="columns--movie-card">
+                    <h3>Fall (2022)</h3>
+                    <p>107 min | Thriller</p>
+                    <hr>
+                    <p>Best friends Becky and Hunter find themselves at the top of a <strong>2,000-foot</strong> radio
+                        tower.</p>
+                    <p>Director: Taika Waititi</p>
+                    <p>Stars: Chris Hemsworth, Natalie Portman, Christian Bale, Tessa Thompson</p>
+                    <pre><code>
+    public static void Main(string[] args) {
+        Person Hunter = new Person(name: Hunter);
+        Hunter.fallDown(); //unlucky
+    }
+                </code></pre>
+                </article>
+
+                <article class="columns--movie-card">
+                    <h3>Thor: Love and Thunder (2022)</h3>
+                    <p>118 min | Action, Adventure, Comedy</p>
+                    <hr>
+                    <p>Thor enlists the help of Valkyrie, Korg and ex-girlfriend Jane Foster to fight Gorr the God
+                        Butcher,
+                        who intends to make the gods extinct.</p>
+                    <p>Director: Scott Mann</p>
+                    <p>Stars: Grace Caroline Currey, Virginia Gardner</p>
+                    <pre class="ASCII-pic">
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣤⣶⣶⣿⣿⣷⣶⣦⣤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣠⣄⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣶⠿⠟⠋⠉⠁⠀⠀⠀⠀⠉⠙⠻⣷⣦⣄⢀⣀⣤⣶⡾⠿⠿⠟⠛⠛⠻⠿⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⡿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣿⡛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⡿⠋⠀⠀⠀⠀⢀⣠⣶⣶⣶⣶⣶⣶⣶⣶⣦⣤⣀⠀⢻⣷⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⣷⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⡟⠁⠀⠀⢠⣴⣿⠟⠛⠉⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⢿⣶⣿⣧⣤⣤⣶⣶⣿⣿⡿⢿⣿⣿⣶⣶⣴⣿⣆⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⡿⠁⠀⠀⠀⠘⠋⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣤⣴⣶⣶⣶⣿⣿⣧⣀⠀⠀⠀⢀⣤⣤⣤⣤⣴⣦⣼⣿⣿⣿⣿⣷⣤⣀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣶⡿⠿⣛⣩⣭⣿⣿⣿⣿⣭⣭⣙⣿⣷⡄⠀⠈⠻⣏⣉⣹⣽⣿⣿⣭⣿⣯⣭⣉⣙⢻⣷⡄⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣴⡿⠟⠀⠀⠀⠀⠀⠀⠀⠀⣠⣴⣾⠿⣟⣩⣷⣶⠿⠟⠋⠉⠉⠁⠀⠉⢉⣉⣉⣛⣿⣿⣶⠾⠿⠿⠛⢛⣉⣍⣭⣉⣍⣉⣉⣛⣻⢿⣿⣇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⠟⠋⠀⠀⠀⠀⠀⠀⠀⠀⣠⣶⣿⣭⣶⡿⠟⠋⠉⠀⠀⢀⣀⣤⣴⣶⣿⣾⣿⠿⠟⠛⠿⣿⣿⣤⣤⣶⣶⡿⠿⢿⣿⣿⣿⣿⣟⠛⠻⠿⢿⣿⣷⡀⠀
+⠀⠀⠀⠀⠀⠀⢀⣾⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢿⣷⣬⣿⣥⣤⣤⣤⣤⣶⣿⠿⣿⣿⠛⢿⣿⣿⣿⣦⡀⠀⠀⣸⡿⠛⠉⠁⠀⠀⣠⣿⣇⣀⡿⠿⣿⣷⡄⠀⠀⢸⣿⡇⠀
+⠀⠀⠀⠀⠀⢀⣾⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⣻⣿⣿⣯⣅⡀⠀⢠⣿⣿⠖⢾⣿⡀⣨⣿⣧⣤⣼⣿⣧⣤⣀⣀⠀⢀⣿⣿⡛⣿⣧⣀⣿⣿⣧⣤⣶⣿⠏
+⠀⠀⠀⠀⣰⣿⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⢿⣶⣭⣟⡿⠿⣿⣿⣿⣿⡿⡿⣿⢿⣿⣿⣯⣽⡿⠉⠙⠛⠿⠿⠿⠿⠿⠿⠿⠿⠿⠿⠟⣿⣿⠿⠃⠀⠀⠀
+⠀⠀⠀⣰⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠿⠿⠾⠿⠿⠾⠿⠿⣿⣿⣿⡿⠋⠉⠁⣤⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣾⡿⠃⠀⠀⠀⠀⠀
+⠀⢀⣼⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣤⣴⣾⠿⠋⠁⠀⠀⠀⠀⠻⠿⢿⣶⣶⣶⣶⣶⣶⠾⣿⣿⡋⠉⠀⠀⠀⠀⠀⠀⠀
+⠀⣼⡟⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢿⠿⠛⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠻⣿⣦⠀⠀⠀⠈⠻⣷⣄⠀⠀⠀⠀⠀⠀⠀
+⢸⣿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠁⠀⠀⠀⠀⠀⠙⢿⣦⠀⠀⠀⠀⠀⠀
+⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣿⣆⠀⠀⠀⠀⠀
+⠘⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣤⣶⣿⠿⠿⠿⠿⠿⠿⠿⢿⣷⣶⣦⣤⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣀⣠⣤⣶⣿⠿⠿⢿⣧⠀⠀⠀⠀
+⠀⢹⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⡏⠉⠀⣤⣤⣤⣤⣤⣄⣀⣀⣀⠉⠉⠉⠛⠛⠿⠿⠿⠶⠶⠶⠶⠶⠶⠾⠿⠿⠿⠟⠛⠛⠉⠉⠁⠀⠀⢀⣼⡿⠀⠀⠀⠀
+⠀⠈⢿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠘⣿⣇⠀⠀⠹⠉⠉⠉⡉⠙⠛⠻⠿⢿⣶⣶⣶⣶⣤⣤⣄⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣀⣤⣤⣴⣶⣶⡿⠟⠁⠀⠀⠀⠀
+⠀⠀⠈⢿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⡇⠘⢿⣷⣤⣶⣶⡿⠿⠿⢿⣿⣶⣦⣤⣤⣤⣈⣉⠙⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠛⠉⠉⢈⣿⠆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠈⠻⣿⣤⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⢿⣦⣤⣤⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠛⠛⠛⠿⠿⢿⣿⣷⣶⣶⣶⣤⣤⣤⣤⣤⣤⣤⣤⣤⣶⡿⠛⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠈⠻⣿⣷⣤⣄⣀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣩⣽⡿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠙⠿⢿⣿⣿⣿⣶⣶⣤⣄⣀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣀⣀⣠⣶⣾⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠛⠿⢿⣿⣯⣟⣻⣿⠿⠷⠶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⡶⣶⣿⣿⡿⠟⠛⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠙⠛⠻⠿⢷⣶⣶⣶⣶⣶⣤⣤⣤⣤⣤⣤⣤⣤⣤⣤⣴⣶⣶⡿⠟⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠉⠉⠉⠛⠛⠛⠉⠉⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+                </pre>
+                </article>
+
+                <article class="columns--movie-card">
+                    <h3>Nope (2022)</h3>
+                    <p>130 min | Horror, Mystery Thriller</p>
+                    <hr>
+                    <p>The residents of a lonely gulch in inland California bear witness to an uncanny and chilling
+                        discovery.</p>
+                    <p>Director: Jordan Peele</p>
+                    <p>Stars: Daniel Kaluuya, Keke Palmer, Brandon Perea, Michael Wincott</p>
+                    <blockquote>
+                        <p>'This dream you're chasing, the one where you end up at the top of the mountain,
+                            all eyes on you, it's the dream you <i>never</i> wake up from.'</p>
+                        <cite>Antlers Holst (Nope)</cite>
+                    </blockquote>
+                </article>
+
+            </section>
+        </section>
+        <section class="layout-columns--section">
+            <article class="columns--info-block">
+                <h2 class="columns--h2">Top 5 films from Watch later list</h2>
+                <table class="movie-table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Rating</th>
+                        <th>Type</th>
+                    </tr>
+                    <tr>
+                        <td>Prestige (2006)</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>War Dogs (2016)</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>10 Cloverfield Lane (2016)</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>The sixth sense (1999)</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
+                        <td>The Village (2004)</td>
+                        <td>N/A</td>
+                        <td>N/A</td>
+                    </tr>
+                </table>
+            </article>
+            <article class="columns--info-block">
+                <h2 class="columns--h2">Public lists</h2>
+                <table class="movie-table">
+                    <tr>
+                        <th>Name</th>
+                        <th>Rating</th>
+                        <th>Type</th>
+                    </tr>
+                    <tr>
+                        <td>Top Hollywood horrors</td>
+                        <td>N/A</td>
+                        <td>Horror</td>
+                    </tr>
+                    <tr>
+                        <td>Russian golden collection</td>
+                        <td>N/A</td>
+                        <td>Drama</td>
+                    </tr>
+                    <tr>
+                        <td>Documentaries about IT geniuses</td>
+                        <td>N/A</td>
+                        <td>Documentaries</td>
+                    </tr>
+                    <tr>
+                        <td>Best films from 80s</td>
+                        <td>N/A</td>
+                        <td>Mixed</td>
+                    </tr>
+                    <tr>
+                        <td>GTEgorss's favorites</td>
+                        <td>N/A</td>
+                        <td>Mixed</td>
+                    </tr>
+                    <tr>
+                        <td>Xrem's best party comedies</td>
+                        <td>N/A</td>
+                        <td>Comedy</td>
+                    </tr>
+                </table>
+            </article>
+        </section>
+    </div>
+
+</main>
+
+<footer>
+
+    <hr class="footer--hr">
+    <p>Author: Sergeev 'GTEgorss' Egor</p>
+    <a class="footer--a" href="mailto:noartu@mail.ru" target="_blank">noartu@mail.ru</a>
+    <a class="footer--a" href="https:/t.me/GTEgorss" target="_blank">@GTEgorss</a>
+    <p>Copyright by ©Не катайте, пожалуйста!</p>
+    <p>Load time: <span id="load-time"></span> s</p>
+
+</footer>
+
+</body>
 </html>
