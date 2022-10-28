@@ -43,33 +43,3 @@ Contacts:
 [My telegram](https://t.me/GTEgorss)
 
 <noartu@mail.ru>
-
-Now, some Markdown practice
-----------------------------
-***
-#### Some source code:
-<pre><code>html {
-background-color: #424242;
-color: #FFFFFF;
-font-family: Arial, serif;
-}
-
-nav {
-display: flex;
-justify-self: flex-start;
-}
-
-.logo {
-display: flex;
-justify-content: flex-start;
-color: coral;
-font-size: 20px;
-}</code></pre>
-
-###### Quote of the day found in Google:
->If ***Google*** teaches you anything, it's that ___small___ ideas 
->can be ___big___.</br>
-><i>-Ben Sildermann</i>
-
-###### Line of code:
-`Wassup! Line of code here`
