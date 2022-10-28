@@ -7,7 +7,6 @@ Moviecatalog (M33011 Sergeev Egor Dmitrievich)
 
 Introduction
 -------------
-***
 This project was inspired by personal need to store and sort 
 film I want to watch or remember.
 
@@ -16,7 +15,6 @@ film, this website it the perfect choice to check out.
 
 Content
 ------------
----
 <u>The main functions planned to be added</u>:
 1) Creating your own lists with films
 2) Sharing lists
@@ -32,14 +30,12 @@ accessible on different devices
 
 Visuals:
 -------
----
 #### Home page:
 
 ![img_1.png](Content/img.png)
 
 Contacts:
 --------
----
 [My telegram](https://t.me/GTEgorss)
 
 <noartu@mail.ru>
