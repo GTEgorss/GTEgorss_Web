@@ -87,13 +87,15 @@
     margin: 20px;
 }
 
+
+
 .footer--a {
     color: white;
     margin: 5px;
 }
 
 .footer--hr {
-    margin: 30px 20px 30px;
+    margin: 10px 20px 30px;
 }
 
 @media only screen and (max-width: 680px) {
