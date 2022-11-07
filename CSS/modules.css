@@ -88,7 +88,7 @@ main h2 {
 }
 
 .watch-later--subtitle {
-    font-size: 24px;
+    font-size: 20px;
     margin-right: 10px;
     margin-top: 0;
     margin-bottom: 0;
@@ -99,6 +99,7 @@ main h2 {
 
     margin-right: 10px;
     padding: 10px;
+    border: none;
     border-radius: 15px;
 }
 
@@ -132,7 +133,7 @@ main h2 {
 }
 
 .movie-list--movie-name {
-    width: 250px;
+    width: 200px;
     text-wrap: normal;
     overflow: hidden;
 
