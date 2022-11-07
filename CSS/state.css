@@ -2,3 +2,10 @@
     border: 3px solid rgba(207, 79, 32, 0.75);
     padding: 7px 30px 7px;
 }
+
+.movie-list--checkbox:checked {
+    background: #424242;
+
+    /*TODO create a tick*/
+    /*TODO maybe change movie name style*/
+}

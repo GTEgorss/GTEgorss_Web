@@ -1,7 +1,3 @@
-main {
-    padding-top: 0;
-}
-
 .layout-title {
     display: flex;
     flex-flow: wrap;
@@ -40,7 +36,6 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(620px, 1fr));
 
     gap: 20px;
-    margin: 0 20px 0;
 }
 
 .layout-columns--section {
@@ -49,7 +44,27 @@ main {
     gap: 20px;
 }
 
-footer {
-    margin: 40px 0;
-    text-align: center;
+.layout-movie-name {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.layout-movie-filter {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.layout-movie-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout-movie-list-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 10px;
+    margin: 10px 0 0;
 }
