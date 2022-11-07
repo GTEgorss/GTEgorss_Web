@@ -129,10 +129,14 @@ function addFilter() {
 }
 
 function initializeListFromLocalStorage() {
-    movies = JSON.parse(localStorage.getItem("movies"));
+    const movies_JSON = localStorage.getItem("movies");
 
-    for (let i = 0; i < movies.length; ++i) {
-        addToList(movies[i].name, movies[i].watched);
+    if (movies_JSON === null) {
+        movies = JSON.parse(movies_JSON);
+
+        for (let i = 0; i < movies.length; ++i) {
+            addToList(movies[i].name, movies[i].watched);
+        }
     }
 }
 
