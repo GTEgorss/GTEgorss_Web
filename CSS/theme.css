@@ -10,7 +10,8 @@
 }
 
 .button--submit {
-    font-size: 20px;
+    padding-top: 13px;
+    padding-bottom: 13px;
     border-radius: 15px;
 }
 
