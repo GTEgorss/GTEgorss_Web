@@ -38,6 +38,8 @@ function addToListFromInput() {
             movies.push(new Movie(movie_name));
 
             SaveMoviesLocalStorage();
+
+            console.log(localStorage.getItem("movies"));
         }
     }
 }
@@ -102,6 +104,8 @@ function setWatched(node, watched) {
     }
 
     SaveMoviesLocalStorage();
+
+    console.log(localStorage.getItem("movies"));
 }
 
 function removeFromList(node) {
@@ -113,6 +117,8 @@ function removeFromList(node) {
     --movieCount;
 
     SaveMoviesLocalStorage();
+
+    console.log(localStorage.getItem("movies"));
 }
 
 function addFilter() {
@@ -138,8 +144,11 @@ function initializeListFromLocalStorage() {
 
 window.onload = () => {
     try {
+        console.log(localStorage.getItem("movies"));
         if (localStorage.getItem("movies") == null)
             localStorage.setItem("movies", "[]");
+
+        console.log(localStorage.getItem("movies"));
     } catch (e) {
         alert("Something went wrong while initializing movies in the local storage.");
     }
