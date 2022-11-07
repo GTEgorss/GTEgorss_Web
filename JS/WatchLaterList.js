@@ -138,7 +138,8 @@ function initializeListFromLocalStorage() {
 
 window.onload = () => {
     try {
-        localStorage.setItem("movies", "[]");
+        if (localStorage.getItem("movies") == null)
+            localStorage.setItem("movies", "[]");
     } catch (e) {
         alert("Something went wrong while initializing movies in the local storage.");
     }
