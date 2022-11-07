@@ -6,14 +6,11 @@ let fixed = false;
 
 function modifyTitle(scrollPos, width) {
 
-
     if (width > 773) {
         maxScrollPos = 105;
     } else {
         maxScrollPos = 164;
     }
-
-    console.log(scrollPos + " " + maxScrollPos + " " + width + "\n");
 
     if (scrollPos > maxScrollPos && !fixed) {
         const topNav = document.querySelector('.layout-nav');
@@ -40,7 +37,6 @@ function modifyTitle(scrollPos, width) {
 document.addEventListener('scroll', (e) => {
     lastScrollY = window.scrollY;
     lastWidth = window.innerWidth;
-
 
     if (!ticking) {
         window.requestAnimationFrame(() => {
