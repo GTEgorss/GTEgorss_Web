@@ -55,6 +55,14 @@
     justify-content: flex-start;
 }
 
+.layout-movie-filter--checkboxes {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 10px;
+}
+
 .layout-movie-list {
     display: flex;
     flex-direction: column;
