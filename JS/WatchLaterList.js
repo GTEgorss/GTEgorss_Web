@@ -30,7 +30,7 @@ function addToListFromInput() {
     if (movie_name) {
         document.getElementById("movieName").value = "";
 
-        if (movies.findIndex(e => e.name === movie_name) !== -1) {
+        if (movies.length > 0 && movies.findIndex(e => e.name === movie_name) !== -1) {
             alert("A movie with the same name is already in the list.");
         } else {
             addToList(movie_name, false);
