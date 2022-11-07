@@ -129,11 +129,9 @@ function addFilter() {
 }
 
 function initializeListFromLocalStorage() {
-    const movies_JSON = localStorage.getItem("movies");
+    movies = JSON.parse(localStorage.getItem("movies"));
 
-    if (movies_JSON === null) {
-        movies = JSON.parse(movies_JSON);
-
+    if (movies != null) {
         for (let i = 0; i < movies.length; ++i) {
             addToList(movies[i].name, movies[i].watched);
         }
@@ -141,6 +139,12 @@ function initializeListFromLocalStorage() {
 }
 
 window.onload = () => {
+    try {
+        localStorage.setItem("movies", "[]");
+    } catch (e) {
+        alert("Something went wrong while initializing movies in the local storage.");
+    }
+
     const input = document.getElementById("movieName");
     input.addEventListener("keyup", function (event) {
         if (event.key === "Enter") {
