@@ -63,19 +63,25 @@
 
     <div class="layout-movie-filter">
         <p class="watch-later--subtitle">Movie filter:</p>
-        <form>
-            <input type="radio" id="all" name="movieFilter" value="All" checked class="movie-filter--checkbox">
-            <label for="all">All</label>
+        <form class="layout-movie-filter--checkboxes">
+            <label for="all">
+                <input type="radio" id="all" name="movieFilter" value="All" checked class="movie-filter--checkbox">
+                All
+            </label>
 
             <br>
 
-            <input type="radio" id="watched" name="movieFilter" value="Watched" class="movie-filter--checkbox">
-            <label for="watched">Watched</label>
+            <label for="watched">
+                <input type="radio" id="watched" name="movieFilter" value="Watched" class="movie-filter--checkbox">
+                Watched
+            </label>
 
             <br>
 
-            <input type="radio" id="notWatched" name="movieFilter" value="NotWatched" class="movie-filter--checkbox">
-            <label for="notWatched">Not watched</label>
+            <label for="notWatched">
+                <input type="radio" id="notWatched" name="movieFilter" value="NotWatched" class="movie-filter--checkbox">
+                Not watched
+            </label>
         </form>
     </div>
 

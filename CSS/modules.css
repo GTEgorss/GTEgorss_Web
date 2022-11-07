@@ -106,8 +106,8 @@ main h2 {
 .movie-filter--checkbox {
     /*appearance: none;*/
     /*-webkit-appearance: none;*/
-    /*-moz-appearance: none; */
-    /*TODO check how it works after*/
+    /*-moz-appearance: none;*/
+    /*TODO add visuals for filters without checkboxes*/
 
     width: 20px;
     height: 20px;
