@@ -56,7 +56,7 @@
         <label for="movieName" class="watch-later--subtitle">Movie name:</label>
         <input type="text" id="movieName" class="text-input">
         <br>
-        <div class="button button--submit" onclick="addToList()">Submit</div>
+        <div class="button button--submit" onclick="addToListFromInput()">Submit</div>
     </div>
 
     <br>
@@ -69,13 +69,13 @@
 
             <br>
 
-            <input type="radio" id="notWatched" name="movieFilter" value="NotWatched" class="movie-filter--checkbox">
-            <label for="notWatched">Not watched</label>
+            <input type="radio" id="watched" name="movieFilter" value="Watched" class="movie-filter--checkbox">
+            <label for="watched">Watched</label>
 
             <br>
 
-            <input type="radio" id="watched" name="movieFilter" value="Watched" class="movie-filter--checkbox">
-            <label for="watched">Watched</label>
+            <input type="radio" id="notWatched" name="movieFilter" value="NotWatched" class="movie-filter--checkbox">
+            <label for="notWatched">Not watched</label>
         </form>
     </div>
 
