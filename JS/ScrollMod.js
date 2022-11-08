@@ -1,9 +1,39 @@
+/**
+ * Contains last window scroll position
+ * @type {number}
+ */
 let lastScrollY = 0;
+
+/**
+ * Contains last window width
+ * @type {number}
+ */
 let lastWidth = window.innerWidth;
+
+/**
+ * Shows at which scroll position style needs to be changed
+ * @type {number}
+ */
 let maxScrollPos = 105;
+
+/**
+ * Shows if scroll happened
+ * @type {boolean}
+ */
 let ticking = false;
+
+/**
+ * Represents current style
+ * @type {boolean}
+ */
 let fixed = false;
 
+/**
+ * Modifies style of the navigation menu based on current scroll position
+ * @param scrollPos
+ * @param width
+ * @function
+ */
 function modifyTitle(scrollPos, width) {
 
     if (width > 773) {
@@ -34,6 +64,9 @@ function modifyTitle(scrollPos, width) {
     }
 }
 
+/**
+ * Adds event listener to the document to call function on scroll
+ */
 document.addEventListener('scroll', (e) => {
     lastScrollY = window.scrollY;
     lastWidth = window.innerWidth;

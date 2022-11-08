@@ -1,5 +1,13 @@
+/**
+ * Contains load time of a page
+ * @type {number}
+ */
 let loadTime = -1;
 
+/**
+ * Shows load time in a footer of a page
+ * @function
+ */
 (() => {
     const start = new Date().getTime();
 

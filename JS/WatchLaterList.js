@@ -1,21 +1,57 @@
+/**
+ * Shows the number of current movies in a watch later list
+ * @type {number}
+ */
 let movieCount = 0;
 
+/**
+ * Class representing a movie in a watch later list
+ * @class
+ */
 class Movie {
+    /**
+     * Name of the movie
+     * @type {string}
+     */
     name;
+
+    /**
+     * Boolean field which shows if the movie has been watched or not
+     * @type {boolean}
+     */
     watched = false;
 
+    /**
+     *
+     * @param {string } name - Movie name
+     * @param {boolean} watched - watched value
+     * @constructor
+     */
     constructor(name, watched = false) {
         this.name = name;
         this.watched = watched;
     }
 }
 
+/**
+ * Array containing object of Movie class
+ * @type {*[]}
+ */
 let movies = [];
 
+/**
+ * Variable that contains function representing current filter state
+ * @param watched
+ * @returns {boolean}
+ */
 let filter = (watched) => {
     return true;
 };
 
+/**
+ * Saves movies array to the local storage
+ * @function
+ */
 function SaveMoviesLocalStorage() {
     try {
         localStorage.setItem("movies", JSON.stringify(movies));
@@ -24,6 +60,10 @@ function SaveMoviesLocalStorage() {
     }
 }
 
+/**
+ * Add movie from the text input on the page
+ * @function
+ */
 function addToListFromInput() {
     let movie_name = document.getElementById("movieName").value.trim().replace(/\s+/g, ' ');
 
@@ -44,6 +84,12 @@ function addToListFromInput() {
     }
 }
 
+/**
+ * Adds html element for the movie
+ * @param movie_name
+ * @param watched
+ * @function
+ */
 function addToList(movie_name, watched) {
     const movieList = document.getElementById("movieList").children[0];
 
@@ -92,6 +138,12 @@ function addToList(movie_name, watched) {
     ++movieCount;
 }
 
+/**
+ * Sets style for a movie name according to if it has been watched or not
+ * @param node
+ * @param watched
+ * @function
+ */
 function setWatched(node, watched) {
     const movie_name_element = node.parentNode.nextSibling.childNodes[0];
 
@@ -108,6 +160,11 @@ function setWatched(node, watched) {
     console.log(localStorage.getItem("movies"));
 }
 
+/**
+ * Removes movie from movies array and removes corresponding node from the page
+ * @param node
+ * @function
+ */
 function removeFromList(node) {
     node.parentNode.parentNode.parentNode.removeChild(node.parentNode.parentNode);
 
@@ -121,6 +178,10 @@ function removeFromList(node) {
     console.log(localStorage.getItem("movies"));
 }
 
+/**
+ * Applies filter for the movie nodes in the list on the page
+ * @function
+ */
 function addFilter() {
     const movie_list = document.querySelectorAll('tr[name="movieListItem"]');
 
@@ -134,6 +195,10 @@ function addFilter() {
     });
 }
 
+/**
+ * Extracts movies from the local storage
+ * @function
+ */
 function initializeListFromLocalStorage() {
     movies = JSON.parse(localStorage.getItem("movies"));
 
@@ -142,7 +207,13 @@ function initializeListFromLocalStorage() {
     }
 }
 
+/**
+ * Calls functions on window load
+ */
 window.onload = () => {
+    /**
+     * Creates movies array in the local
+     */
     try {
         console.log(localStorage.getItem("movies"));
         if (localStorage.getItem("movies") == null)
@@ -153,6 +224,9 @@ window.onload = () => {
         alert("Something went wrong while initializing movies in the local storage.");
     }
 
+    /**
+     * Adds event listener to Enter button
+     */
     const input = document.getElementById("movieName");
     input.addEventListener("keyup", function (event) {
         if (event.key === "Enter") {
@@ -160,6 +234,9 @@ window.onload = () => {
         }
     });
 
+    /**
+     * Adds event listener to filter checkboxes
+     */
     const filters = document.querySelectorAll('input[name="movieFilter"]');
     filters.forEach(e => e.addEventListener('change', (event) => {
         if (event.currentTarget.checked) {
