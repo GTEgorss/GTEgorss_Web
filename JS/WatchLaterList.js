@@ -35,7 +35,7 @@ class Movie {
 
 /**
  * Array containing object of Movie class
- * @type {*[]}
+ * @type {Movie[]}
  */
 let movies = [];
 
