@@ -104,9 +104,9 @@ main h2 {
 }
 
 .movie-filter--checkbox {
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
+    /*appearance: none;*/
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
     /*TODO add visuals for filters without checkboxes*/
 
     width: 20px;
