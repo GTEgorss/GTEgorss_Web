@@ -1,12 +1,12 @@
-.main--h1 {
-    margin: 0 20px 10px;
+main h1 {
+    margin: 10px 0 10px;
 }
 
-.main--hr {
-    margin: 10px 20px 30px;
+main hr {
+    margin: 10px 0 30px;
 }
 
-.main--h2 {
+main h2 {
     margin: 0;
 }
 
@@ -84,17 +84,70 @@
 }
 
 .text {
-    margin: 20px;
+    margin: 0;
 }
 
+.watch-later--subtitle {
+    font-size: 20px;
+    margin-right: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
+.text-input {
+    font-size: 20px;
 
-.footer--a {
+    margin-right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+}
+
+.movie-filter--checkbox {
+    /*appearance: none;*/
+    /*-webkit-appearance: none;*/
+    /*-moz-appearance: none;*/
+    /*TODO add visuals for filters without checkboxes*/
+
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.movie-filter--option {
+    font-size: 20px;
+}
+
+.movie-list--checkbox {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    border: 3px solid #FFF;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.movie-list--movie-name {
+    width: 250px;
+    text-wrap: normal;
+    overflow: hidden;
+
+    font-size: 20px;
+    margin: 0;
+    border-radius: 0;
+}
+
+footer a {
     color: white;
     margin: 5px;
 }
 
-.footer--hr {
+footer hr {
     margin: 10px 20px 30px;
 }
 

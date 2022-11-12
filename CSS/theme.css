@@ -8,6 +8,16 @@
     border-radius: 15px;
 }
 
+.button--submit {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 15px;
+}
+
+.button--remove {
+    border-radius: 40px;
+}
+
 .button:hover {
     background: #B9B9B9;
 }
