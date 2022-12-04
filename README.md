@@ -1,7 +1,10 @@
 Moviecatalog (M33011 Sergeev Egor Dmitrievich)
 ============
-![Lines of code](https://img.shields.io/tokei/lines/GitHub/GTEgorss/GTEgorss_Web)
-![GitHub last commit](https://img.shields.io/github/last-commit/GTEgorss/GTEgorss_Web)
+![last commit](https://img.shields.io/github/last-commit/GTEgorss/GTEgorss_Web)
+![issues](https://img.shields.io/github/issues-raw/GTEgorss/GTEgorss_Web)
+![closed_issues](https://img.shields.io/github/issues-closed-raw/GTEgorss/GTEgorss_Web)
+![release](https://img.shields.io/github/v/release/GTEgorss/GTEgorss_Web)
+
 
 <p style="text-align:center">Convenient service to store and share films</p>
 
