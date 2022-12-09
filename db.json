@@ -24,16 +24,6 @@
       "name": "Dad's playlist",
       "filmsQty": 5,
       "rating": 99.9
-    },
-    {
-      "name": "Brother's playlist",
-      "filmsQty": 6,
-      "rating": 99.8
-    },
-    {
-      "name": "Sister's playlist",
-      "filmsQty": 1,
-      "rating": 1
     }
   ]
 }
