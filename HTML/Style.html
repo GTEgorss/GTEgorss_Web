@@ -15,7 +15,6 @@
     <title>Moviecatalog</title>
 
     <script src="../JS/ScrollMod.js"></script>
-    <script src="../JS/WatchLaterList.js"></script>
 </head>
 <body>
 
@@ -41,63 +40,29 @@
         <a class="button button--nav" href="../HTML/Lists.html">Lists</a>
         <a class="button button--nav" href="../HTML/Favorites.html">Favorites</a>
         <a class="button button--nav" href="../HTML/Explore.html">Explore</a>
-        <a class="button button--nav is-button-selected" href="../HTML/WatchLater.html">Watch Later</a>
-        <a class="button button--nav" href="../HTML/Style.html">Style</a>
+        <a class="button button--nav" href="../HTML/WatchLater.html">Watch Later</a>
+        <a class="button button--nav is-button-selected" href="../HTML/Style.html">Style</a>
     </nav>
 
 </header>
 
 <main>
 
-    <h1>Watch Later</h1>
+    <h1>Style</h1>
 
     <hr>
 
-    <div class="layout-movie-name">
-        <label for="movieName" class="watch-later--subtitle">Movie name:</label>
-        <input type="text" id="movieName" class="text-input">
-        <br>
-        <div class="button button--submit" onclick="addToListFromInput()">Submit</div>
-    </div>
-
-    <br>
-
-    <div class="layout-movie-filter">
-        <p class="watch-later--subtitle">Movie filter:</p>
-        <form class="layout-movie-filter--checkboxes">
-            <label for="all">
-                <input type="radio" id="all" name="movieFilter" value="All" checked class="movie-filter--checkbox">
-                All
-            </label>
-
-            <br>
-
-            <label for="watched">
-                <input type="radio" id="watched" name="movieFilter" value="Watched" class="movie-filter--checkbox">
-                Watched
-            </label>
-
-            <br>
-
-            <label for="notWatched">
-                <input type="radio" id="notWatched" name="movieFilter" value="NotWatched" class="movie-filter--checkbox">
-                Not watched
-            </label>
-        </form>
-    </div>
-
-    <br>
-
-    <div class="layout-movie-list">
-        <p class="watch-later--subtitle">Watch later list:</p>
-
-        <table id="movieList">
-            <tbody>
-            </tbody>
-        </table>
-    </div>
-
 </main>
+
+<style contenteditable="true" class="dynamic-style" style="
+    display: block;
+    min-height: 200px;
+    white-space: pre;
+    transition: all 0.2s">
+    .dynamic-style {
+        background: #BADA55;
+    }
+</style>
 
 <footer>
 
