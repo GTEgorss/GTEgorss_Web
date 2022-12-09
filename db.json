@@ -1,37 +1,39 @@
-[
-  {
-    "name": "GTEgorss's playlist",
-    "filmsQty": 10,
-    "rating": 9.6
-  },
-  {
-    "name": "Xrem's playlist",
-    "filmsQty": 12,
-    "rating": 10.0
-  },
-  {
-    "name": "Tikhon's playlist",
-    "filmsQty": 5,
-    "rating": 0.2
-  },
-  {
-    "name": "Mum's playlist",
-    "filmsQty": 3,
-    "rating": 100.0
-  },
-  {
-    "name": "Dad's playlist",
-    "filmsQty": 5,
-    "rating": 99.9
-  },
-  {
-    "name": "Brother's playlist",
-    "filmsQty": 6,
-    "rating": 99.8
-  },
-  {
-    "name": "Sister's playlist",
-    "filmsQty": 1,
-    "rating": 1
-  }
-]
+{
+  "playlists": [
+    {
+      "name": "GTEgorss's playlist",
+      "filmsQty": 10,
+      "rating": 9.6
+    },
+    {
+      "name": "Xrem's playlist",
+      "filmsQty": 12,
+      "rating": 10.0
+    },
+    {
+      "name": "Tikhon's playlist",
+      "filmsQty": 5,
+      "rating": 0.2
+    },
+    {
+      "name": "Mum's playlist",
+      "filmsQty": 3,
+      "rating": 100.0
+    },
+    {
+      "name": "Dad's playlist",
+      "filmsQty": 5,
+      "rating": 99.9
+    },
+    {
+      "name": "Brother's playlist",
+      "filmsQty": 6,
+      "rating": 99.8
+    },
+    {
+      "name": "Sister's playlist",
+      "filmsQty": 1,
+      "rating": 1
+    }
+  ]
+}
