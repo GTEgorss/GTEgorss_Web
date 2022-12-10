@@ -1,6 +1,12 @@
 {
   "playlists": [
     {
+      "id": 0,
+      "title": "Top 50",
+      "filmsQty": 50,
+      "rating": 10.0
+    },
+    {
       "id": 1,
       "title": "GTEgorss's playlist",
       "filmsQty": 10,
@@ -10,7 +16,7 @@
       "id": 2,
       "title": "Xrem's playlist",
       "filmsQty": 12,
-      "rating": 10.0
+      "rating": 9.9
     },
     {
       "id": 3,
@@ -20,7 +26,7 @@
     },
     {
       "id": 4,
-      "title": "Mum's playlist",
+      "title": "Mom's playlist",
       "filmsQty": 3,
       "rating": 100.0
     },
