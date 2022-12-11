@@ -19,3 +19,7 @@
 .is-filtered-out {
     display: none;
 }
+
+.is-movie-table-empty {
+    display: none;
+}

@@ -1,5 +1,91 @@
+const playlistsDBMaxIndex = 7;
+let process = false;
+let error = false;
+
+function loadPlaylists() {
+    if (!process) {
+        process = true;
+
+        document.querySelector('#playlist-spinner').style.display = 'block';
+        document.querySelector('#loaded-playlists').setAttribute('class', 'is-movie-table-empty');
+
+        const playlistIndices = [];
+        playlistIndices[0] = Math.round(Math.random() * playlistsDBMaxIndex);
+
+        do {
+            playlistIndices[1] = Math.round(Math.random() * playlistsDBMaxIndex);
+        } while (playlistIndices[1] === playlistIndices[0]);
+
+        do {
+            playlistIndices[2] = Math.round(Math.random() * playlistsDBMaxIndex);
+        } while (playlistIndices[2] === playlistIndices[0] || playlistIndices[2] === playlistIndices[1]);
+
+
+        setTimeout(
+            () => {
+                const url = error
+                    ? `https://my-json-server.typicode.com/GTEgors/GTEgorss_Web/playlists/`
+                    : `https://my-json-server.typicode.com/GTEgorss/GTEgorss_Web/playlists/`;
+                const request = fetch(url);
+
+                request.then((response) => response.json())
+                    .then((data) => parseData(data, playlistIndices))
+                    .catch(() => alert("You're a failure!"));
+            },
+            1000);
+    }
+}
+
+function parseData(data, playlistIndices) {
+    document.querySelector('#playlist-spinner').style.display = 'none';
+
+    if (!(data.length > 0)) {
+        process = false;
+        throw new Error("Something went wrong");
+    }
+
+    const table = document.querySelector('#loaded-playlists');
+    const tableBody = table.children[0];
+
+    tableBody.querySelectorAll("td").forEach(td => td.parentElement.remove());
+
+    playlistIndices.forEach(i => {
+            console.log(data[i]);
+
+            const tableRow = document.createElement('tr');
+
+            for (let key in data[i]) {
+                if (key !== 'id') {
+                    const dataTd = document.createElement('td');
+                    const dataKey = document.createTextNode(data[i][key]);
+                    dataTd.appendChild(dataKey);
+                    tableRow.appendChild(dataTd);
+                }
+            }
+
+            tableBody.appendChild(tableRow);
+        }
+    );
+
+    if (playlistIndices.length > 0) {
+        table.setAttribute('class', 'movie-table explore-movie-table');
+    }
+
+    process = false;
+}
+
+function causeError() {
+    error = !error;
+
+    const errorButton = document.querySelector('#error-button');
+
+    if (error) {
+        errorButton.innerHTML = 'Fix error';
+    } else {
+        errorButton.innerHTML = 'Cause error';
+    }
+}
+
 (() => {
-    fetch('https://my-json-server.typicode.com/GTEgorss/GTEgorss_Web/playlists')
-        .then((response) => response.json())
-        .then((data) => console.log(data));
+    loadPlaylists();
 })();

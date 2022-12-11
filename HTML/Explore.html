@@ -52,10 +52,26 @@
 
     <hr>
 
-    <div class="spinner">
+    <div id="playlist-spinner" class="spinner">
         <div class="spinner-head">
         </div>
     </div>
+
+    <table id="loaded-playlists" class="is-movie-table-empty">
+        <tr>
+            <th>Title</th>
+            <th>Size</th>
+            <th>Rating</th>
+        </tr>
+    </table>
+
+    <button class="button button--refresh" onclick="loadPlaylists()">
+        Refresh
+    </button>
+
+    <button id="error-button" class="button button--refresh" onclick="causeError()">
+        Cause error
+    </button>
 
 </main>
 

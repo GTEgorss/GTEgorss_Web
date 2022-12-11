@@ -18,10 +18,21 @@
     border-radius: 40px;
 }
 
+.button--refresh {
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+}
+
 .button:hover {
     background: #B9B9B9;
 }
 
 .icon {
     filter: drop-shadow(2px 4px 4px black);
+}
+
+.explore-movie-table {
+    color: black;
+    max-width: 50%;
 }
