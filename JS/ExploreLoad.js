@@ -30,7 +30,10 @@ function loadPlaylists() {
 
                 request.then((response) => response.json())
                     .then((data) => parseData(data, playlistIndices))
-                    .catch(() => alert("You're a failure!"));
+                    .catch((error) => {
+                        alert("You're a failure!");
+                        console.log(error);
+                    });
             },
             1000);
     }
@@ -39,9 +42,9 @@ function loadPlaylists() {
 function parseData(data, playlistIndices) {
     document.querySelector('#playlist-spinner').style.display = 'none';
 
-    if (!(data.length > 0)) {
+    if (!(data.length > 0 && playlistIndices.every(i => i <= data.length))) {
         process = false;
-        throw new Error("Something went wrong");
+        throw new Error("Something is wrong with the data");
     }
 
     const table = document.querySelector('#loaded-playlists');
@@ -50,8 +53,6 @@ function parseData(data, playlistIndices) {
     tableBody.querySelectorAll("td").forEach(td => td.parentElement.remove());
 
     playlistIndices.forEach(i => {
-            console.log(data[i]);
-
             const tableRow = document.createElement('tr');
 
             for (let key in data[i]) {
