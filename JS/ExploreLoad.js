@@ -28,7 +28,13 @@ function loadPlaylists() {
                     : `https://my-json-server.typicode.com/GTEgorss/GTEgorss_Web/playlists/`;
                 const request = fetch(url);
 
-                request.then((response) => response.json())
+                request.then((response) => {
+                    if (response.ok) {
+                        return response.json();
+                    } else {
+                        throw new Error("Server request failed");
+                    }
+                })
                     .then((data) => parseData(data, playlistIndices))
                     .catch((error) => {
                         alert("You're a failure!");
