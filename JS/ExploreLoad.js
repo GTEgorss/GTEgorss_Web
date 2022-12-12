@@ -6,8 +6,10 @@ function loadPlaylists() {
     if (!process) {
         process = true;
 
-        document.querySelector('#playlist-spinner').style.display = 'block';
-        document.querySelector('#loaded-playlists').setAttribute('class', 'is-movie-table-empty');
+        let spinner = document.querySelector('#playlist-spinner');
+        let table = document.querySelector('#loaded-playlists');
+        spinner.style.display = 'block';
+        table.setAttribute('class', 'is-movie-table-empty');
 
         const playlistIndices = [];
         playlistIndices[0] = Math.round(Math.random() * playlistsDBMaxIndex);
@@ -38,6 +40,8 @@ function loadPlaylists() {
                     .then((data) => parseData(data, playlistIndices))
                     .catch((error) => {
                         alert("You're a failure!");
+                        process = false;
+                        spinner.style.display = 'none';
                         console.log(error);
                     });
             },
