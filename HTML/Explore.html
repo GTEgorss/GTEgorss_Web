@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <script src="../Bundle/bundle.js"></script>
+    <script src="../JS/LoadTime.js"></script>
+    <script src="../JS/ScrollMod.js"></script>
 
     <link rel="shortcut icon" href="../Content/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/base.css">
@@ -9,6 +10,8 @@
     <link rel="stylesheet" href="../CSS/modules.css">
     <link rel="stylesheet" href="../CSS/state.css">
     <link rel="stylesheet" href="../CSS/theme.css">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/notie/dist/notie.min.css">
+
     <meta charset="UTF-8">
     <meta name="keywords" content="Movie, Catalog, Catalogue, Moviecatalog, Moviecatalogue, film, list">
     <meta name="description" content="Best place to find or share films you like, create playlists and ratings">
@@ -63,13 +66,15 @@
         </tr>
     </table>
 
-    <button class="button button--refresh" onclick="loadPlaylists()">
+    <button id="refresh-button" class="button button--refresh">
         Refresh
     </button>
 
-    <button id="error-button" class="button button--refresh" onclick="causeError()">
+    <button id="error-button" class="button button--refresh">
         Cause error
     </button>
+
+    <div id="js-spinner"></div>
 
 </main>
 
@@ -81,10 +86,9 @@
     <a href="https:/t.me/GTEgorss" target="_blank">@GTEgorss</a>
     <p>Copyright by ©Не катайте, пожалуйста!</p>
     <p>Load time: <span id="load-time"></span> s</p>
-
 </footer>
 
-<script src="../JS/ExploreLoad.js"></script>
+<script type="module" src="../JS/ExploreLoad.js"></script>
 
 </body>
 </html>

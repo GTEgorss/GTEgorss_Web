@@ -1,3 +1,5 @@
+import notie from "../Lib/notie.js"
+
 const playlistsDBMaxIndex = 7;
 let process = false;
 let error = false;
@@ -22,7 +24,6 @@ function loadPlaylists() {
             playlistIndices[2] = Math.round(Math.random() * playlistsDBMaxIndex);
         } while (playlistIndices[2] === playlistIndices[0] || playlistIndices[2] === playlistIndices[1]);
 
-
         setTimeout(
             () => {
                 const url = error
@@ -37,9 +38,24 @@ function loadPlaylists() {
                         throw new Error("Server request failed");
                     }
                 })
-                    .then((data) => parseData(data, playlistIndices))
+                    .then((data) => {
+                        parseData(data, playlistIndices);
+                        notie.alert({
+                            type: 'success',
+                            text: "Lucky this time! You're <b>not</b> a failure!",
+                            stay: false,
+                            position: 'bottom',
+                            time: 2,
+                        });
+                    })
                     .catch((error) => {
-                        alert("You're a failure!");
+                        notie.alert({
+                            type: 'error',
+                            text: " 🥳Congratz! You're a <b><i>failure!</i></b>🥳",
+                            stay: false,
+                            position: 'bottom',
+                            time: 2,
+                        });
                         process = false;
                         spinner.style.display = 'none';
                         console.log(error);
@@ -97,6 +113,28 @@ function causeError() {
     }
 }
 
+function refreshPlaylists() {
+    notie.confirm({
+            text: "Do you really want to refresh and very likely become a failure?",
+            submitText: "Yes, I know I might become a failure (weird)...",
+            cancelText: "No, I don't want to be a failure (right option btw)",
+            position: 'top',
+        },
+        function () {
+            notie.alert({type: 'warning', text: 'Questionable choice but ok', time: 2});
+            loadPlaylists();
+        },
+        function () {
+            notie.alert({type: 'success', text: 'Well chosen! +100 social credits', time: 2});
+        });
+}
+
 (() => {
+    const refreshButton = document.querySelector('#refresh-button');
+    refreshButton.addEventListener('click', refreshPlaylists);
+
+    const causeErrorButton = document.querySelector('#error-button');
+    causeErrorButton.addEventListener('click', causeError);
+
     loadPlaylists();
 })();

@@ -1,8 +1,10 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-    <script src="../Bundle/bundle.js"></script>
+    <script src="../JS/LoadTime.js"></script>
+    <script src="../JS/ScrollMod.js"></script>
     <script src="../JS/WatchLaterList.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
     <link rel="shortcut icon" href="../Content/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../CSS/base.css">
@@ -10,6 +12,7 @@
     <link rel="stylesheet" href="../CSS/modules.css">
     <link rel="stylesheet" href="../CSS/state.css">
     <link rel="stylesheet" href="../CSS/theme.css">
+
     <meta charset="UTF-8">
     <meta name="keywords" content="Movie, Catalog, Catalogue, Moviecatalog, Moviecatalogue, film, list">
     <meta name="description" content="Best place to find or share films you like, create playlists and ratings">
@@ -51,12 +54,12 @@
 
     <hr>
 
-    <div class="layout-movie-name">
-        <label for="movieName" class="watch-later--subtitle">Movie name:</label>
-        <input type="text" id="movieName" class="text-input">
-        <br>
-        <div class="button button--submit" onclick="addToListFromInput()">Submit</div>
-    </div>
+        <div class="layout-movie-name">
+            <label for="movieName" class="watch-later--subtitle">Movie name:</label>
+            <input type="text" id="movieName" class="text-input">
+            <br>
+            <div class="button button--submit" onclick="addToListFromInput()">Submit</div>
+        </div>
 
     <br>
 
@@ -78,7 +81,8 @@
             <br>
 
             <label for="notWatched">
-                <input type="radio" id="notWatched" name="movieFilter" value="NotWatched" class="movie-filter--checkbox">
+                <input type="radio" id="notWatched" name="movieFilter" value="NotWatched"
+                       class="movie-filter--checkbox">
                 Not watched
             </label>
         </form>
