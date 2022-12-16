@@ -137,6 +137,13 @@ function refreshPlaylists() {
 }
 
 (() => {
+    //а здесь вот меняем шрифт штук
+    notie.setOptions({
+        classes: {
+            textbox: 'my-notie-textbox',
+        }
+    });
+
     const refreshButton = document.querySelector('#refresh-button');
     refreshButton.addEventListener('click', refreshPlaylists);
 

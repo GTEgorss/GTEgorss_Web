@@ -36,3 +36,8 @@
     color: black;
     max-width: 50%;
 }
+
+.my-notie-textbox {
+    font-family: 'Papyrus', sans-serif;
+    padding: 20px;
+}
