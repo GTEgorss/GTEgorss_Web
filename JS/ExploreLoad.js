@@ -141,6 +141,7 @@ function refreshPlaylists() {
     notie.setOptions({
         classes: {
             textbox: 'my-notie-textbox',
+            button: 'my-notie-button',
         }
     });
 

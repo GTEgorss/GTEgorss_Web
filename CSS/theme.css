@@ -38,6 +38,13 @@
 }
 
 .my-notie-textbox {
+    color: #FFFFFF;
     font-family: 'Papyrus', sans-serif;
     padding: 20px;
+}
+
+.my-notie-button {
+    color: #FFFFFF;
+    font-family: 'Papyrus', sans-serif;
+    padding: 10px;
 }
