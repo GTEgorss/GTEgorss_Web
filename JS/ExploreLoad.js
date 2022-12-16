@@ -1,3 +1,4 @@
+//здесь мы импортируем ява скрипт либрери
 import notie from "../Lib/notie.js"
 
 const playlistsDBMaxIndex = 7;
@@ -40,6 +41,8 @@ function loadPlaylists() {
                 })
                     .then((data) => {
                         parseData(data, playlistIndices);
+
+                        // тут вот вызываем алерт
                         notie.alert({
                             type: 'success',
                             text: "Lucky this time! You're <b>not</b> a failure!",
@@ -49,6 +52,8 @@ function loadPlaylists() {
                         });
                     })
                     .catch((error) => {
+
+                        // а вот тут вот вызываем алерт
                         notie.alert({
                             type: 'error',
                             text: " 🥳Congratz! You're a <b><i>failure!</i></b>🥳",
@@ -114,6 +119,8 @@ function causeError() {
 }
 
 function refreshPlaylists() {
+    //а вот тут вызываем конфирм
+
     notie.confirm({
             text: "Do you really want to refresh and very likely become a failure?",
             submitText: "Yes, I know I might become a failure (weird)...",
